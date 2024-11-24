@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Education</title>
+
+    <link rel="stylesheet" href="edu.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><img src="image/close.svg" alt="close" /></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="active">
+        <li onclick="showSidebar()">
+          <a href="#"><img src="image/menu.svg" alt="menu" /></a>
+        </li>
+        <li class="hideOnMoblie"><a href="home.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
+        <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
+        <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
+        <li class="hideOnMoblie"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <section class="Education" id="Education">
+      <p class="table-introduction">
+        Here is a summary of my education journey and the institutions I have
+        attended over the years. The table below provides details of the schools
+        and the respective years I attended.
+      </p>
+      <div class="tableContainer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name of School</th>
+              <th>Year Attended</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Name of School">Country Academy</td>
+              <td data-label="Year Attended">2003-2007 E.C</td>
+            </tr>
+            <tr>
+              <td data-label="Name of School">Ethio-Parent</td>
+              <td data-label="Year Attended">2008-2014 E.C</td>
+            </tr>
+            <tr>
+              <td data-label="Name of School">Addis Ababa University</td>
+              <td data-label="Year Attended">2015-Present E.C</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="skill">
+      <h2>My Skills</h2>
+      <ul>
+        <li>
+          <h4>HTML</h4>
+          <span class="bar"><span class="html"></span></span>
+        </li>
+        <li>
+          <h4>CSS</h4>
+          <span class="bar"><span class="css"></span></span>
+        </li>
+        <li>
+          <h4>JavaScript</h4>
+          <span class="bar"><span class="javascript"></span></span>
+        </li>
+        <li>
+          <h4>Python</h4>
+          <span class="bar"><span class="python"></span></span>
+        </li>
+        <li>
+          <h4>Java</h4>
+          <span class="bar"><span class="java"></span></span>
+        </li>
+        <li>
+          <h4>Linux</h4>
+          <span class="bar"><span class="linux"></span></span>
+        </li>
+      </ul>
+    </div>
+    <h2>My Certificate</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="images/ibm.png" alt="Image 1" />
+          <div class="description">
+            <a href="files/Cybersecurity_Fundamentals.pdf">IBM Cybersecurity</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/udacity.jpg" alt="Image 2" />
+          <div class="description">
+            <a href="files/android.pdf">Udacity android</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/cisco.png" alt="Image 3" />
+          <div class="description">
+            <a href="files/LinuxUnhatched.pdf">Linux</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/ibm.png" alt="Image 4" />
+          <div class="description"><a href="files/AI.pdf">IBM AI</a></div>
+        </div>
+        <div class="slide">
+          <img src="images/cisco.png" alt="Image 5" />
+          <div class="description">
+            <a href="files/Junior_Cybersecurity_Analyst_Career_Path.pdf"
+              >Junior_Cybersecurity_Analyst_Career_Path</a
+            >
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/udacity.jpg" alt="Image 6" />
+          <div class="description">
+            <a href="files/programingFundamental.pdf">programing fundamental</a>
+          </div>
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script src="jedu.js"></script>
+
+    <footer>
+      <div class="container">
+        <h3>Contact me</h3>
+        <p>
+          Email:<a href="mailto:welelabekele5gmail.com"
+            >welelabekele5gmail.com</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 Welela. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

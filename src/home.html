@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welela - Software Student</title>
+
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><img src="images/close.svg" alt="close" /></a>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="Edu.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="active">
+        <li onclick="showSidebar()">
+          <a href="#"><img src="images/menu.svg" alt="menu" /></a>
+        </li>
+        <li class="hideOnMoblie"><a href="home.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
+        <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
+        <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
+        <li class="hideOnMoblie"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <div class="main-content #home">
+      <div class="text-container">
+        <p class="line">Hi!</p>
+        <p class="welela-line">I'm <span class="welela">Welela</span></p>
+        <p class="line">I'm Software Student</p>
+      </div>
+
+      <div class="image-container">
+        <img src="images/w.jpg" alt="Welela's Photo" class="profile-image" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h3>Contact me</h3>
+        <p>
+          Email:<a href="mailto:welelabekele5gmail.com"
+            >welelabekele5gmail.com</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 Welela. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

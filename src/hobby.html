@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welela - My Hobbies</title>
+    <link rel="stylesheet" href="hobby.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><img src="images/close.svg" alt="close" /></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="active">
+        <li onclick="showSidebar()">
+          <a href="#"><img src="images/menu.svg" alt="menu" /></a>
+        </li>
+        <li class="hideOnMoblie"><a href="home.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
+        <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
+        <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
+        <li class="hideOnMoblie"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <section class="hobby-section">
+      <div class="hobby-title">
+        <h2>📚 My Love for Reading</h2>
+      </div>
+      <p class="intro-text">
+        Reading books has always been a great passion of mine. It's not just
+        about escaping into different worlds—it's a way to learn, grow, and
+        explore new perspectives. Here's a list of some of my favorite books
+        that inspire me daily:
+      </p>
+
+      <div class="book-list">
+        <div class="bullet-container">
+          <ul>
+            <li>
+              <span class="bullet-point">"Alemenor" by Dawit Wndmagey</span>
+            </li>
+            <li><span class="bullet-point">"Sebez" by Alemayew Wase</span></li>
+            <li>
+              <span class="bullet-point">"Dertogada" by Ysmake Wrku</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bullet-container">
+          <ul>
+            <li>
+              <span class="bullet-point"
+                >"If Tomorrow Never Comes" by Sidney Sheldon</span
+              >
+            </li>
+            <li>
+              <span class="bullet-point"
+                >"The Murder of Roger Ackroyd" by Agatha Christie"</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hobby-title">
+        <h2>🎬 Animation Videos: A Source of Inspiration</h2>
+      </div>
+      <p class="hobby-detail">
+        When I’m not reading, I often turn to animation videos. They fuel my
+        creativity and offer moments of relaxation. Whether it's a short film or
+        a full-length movie, animation takes me to a magical world.here is
+        trailer of moana 2, which i am looking forward to see.
+      </p>
+
+      <div class="video-container">
+        <video width="560" height="315" controls>
+          <source src="files/Moana2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="hobby-title">
+        <h2>🎶 Spiritual Music: A Soulful Escape</h2>
+      </div>
+      <p class="music-interest">
+        Spiritual music holds a special place in my heart. The soothing melodies
+        bring me peace, and listening to it is a form of meditation. Here's one
+        of my favorite tracks:
+      </p>
+
+      <div class="audio-container">
+        <audio controls>
+          <source src="files/mezmur.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <div class="hobby-title">
+        <h2>🚶‍♂️ Walking: The Mindful Hobby</h2>
+      </div>
+      <p class="walking-interest">
+        Walking is more than just exercise for me—it's a time to reflect and
+        clear my mind. I love long walks in nature, which help me stay connected
+        to the world around me.
+      </p>
+    </section>
+
+    <footer>
+      <div class="container">
+        <h3>Contact me</h3>
+        <p>
+          Email:<a href="mailto:welelabekele5gmail.com"
+            >welelabekele5gmail.com</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 Welela. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

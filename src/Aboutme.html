@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>about me</title>
+
+    <link rel="stylesheet" href="Aboutme.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><img src="images/close.svg" alt="close" /></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="active">
+        <li onclick="showSidebar()">
+          <a href="#"><img src="images/menu.svg" alt="menu" /></a>
+        </li>
+        <li class="hideOnMoblie"><a href="home.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
+        <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
+        <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
+        <li class="hideOnMoblie"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <section class="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          A third-year Software Engineering student at Addis Ababa University,
+          I'm a sociable and resilient individual with a deep passion for
+          technology and community service. I thrive in collaborative
+          environments, where I leverage my strong interpersonal skills to build
+          effective teams and achieve common goals. My volunteer experiences
+          have fostered empathy and reinforced my commitment to making a
+          positive impact, both in my community and beyond.
+        </p>
+        <p>
+          With a growing interest in the rapidly evolving field of
+          cybersecurity, I’m particularly captivated by the intersection of
+          ethical hacking and AI. My goal is to develop AI-driven tools that
+          proactively identify and mitigate security vulnerabilities, helping to
+          protect individuals and organizations from emerging cyber threats. By
+          combining my technical expertise with a strong ethical framework, I
+          aspire to contribute to a safer and more secure digital future.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <h3>Contact me</h3>
+        <p>
+          Email:<a href="mailto:welelabekele5gmail.com"
+            >welelabekele5gmail.com</a
+          >
+        </p>
+      </div>
+      <p>&copy; 2024 Welela. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

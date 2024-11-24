@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Blog</title>
+
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><img src="images/close.svg" alt="close" /></a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Aboutme.html">About me</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <ul class="active">
+        <li onclick="showSidebar()">
+          <a href="#"><img src="images/menu.svg" alt="menu" /></a>
+        </li>
+        <li class="hideOnMoblie"><a href="New.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
+        <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
+        <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
+        <li class="hideOnMoblie"><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+
+    <header>
+      <div class="container">
+        <h1>AI & Cybersecurity: The Detective's Edge</h1>
+        <p class="tagline">
+          "The world is full of obvious things which nobody by any chance ever
+          observes." – Sir Arthur Conan Doyle
+        </p>
+      </div>
+    </header>
+
+    <article class="intro">
+      <div class="container">
+        <h2>My Journey</h2>
+        <p>
+          Ever since I was young, I've been captivated by the mysteries of the
+          world—the unspoken questions, the unknowns, and the thrill of
+          uncovering hidden truths. I’ve always been drawn to detective stories
+          and thrilling mysteries, where every clue and detail is vital to
+          solving a case. Sir Arthur Conan Doyle’s iconic quote perfectly
+          captures my fascination. It suggests that the most significant truths
+          are often right in front of us, yet it takes a sharp mind and careful
+          observation to uncover them. This mindset has stayed with me
+          throughout my academic journey, particularly in my studies as a
+          Software Engineering student. It has also guided me toward my growing
+          passion for the intersection of Artificial Intelligence (AI) and
+          cybersecurity, two fields that are as complex and intriguing as any
+          detective story.
+        </p>
+      </div>
+    </article>
+
+    <article class="story">
+      <div class="container">
+        <h2>The Spark</h2>
+        <p>
+          My journey into AI and cybersecurity was largely shaped by my love for
+          mystery and problem-solving. The pivotal moment when my fascination
+          with these fields truly solidified came while watching CSI: Cyber, a
+          TV show that brought the world of cybercrime and technology to life.
+          The series centers around a team of investigators using cutting-edge
+          technology to track down cybercriminals and prevent digital disasters.
+          The way the show seamlessly integrated real-world issues like hacking,
+          identity theft, and digital surveillance with sophisticated
+          technological solutions sparked my curiosity. The idea that AI could
+          be used to predict and prevent crimes in a virtual world felt like the
+          ultimate blend of detective work and technology—a modern-day puzzle
+          waiting to be solved.
+        </p>
+      </div>
+    </article>
+
+    <article class="passion">
+      <div class="container">
+        <h2>Solving Digital Mysteries</h2>
+        <p>
+          As I watched the show, I began to imagine the possibilities in real
+          life. Could AI be used to track and predict cyber-attacks before they
+          happen? Could it be deployed to analyze vast amounts of data to spot
+          anomalies, like a detective piecing together clues to uncover a
+          criminal’s identity? These questions pushed me to explore the ways AI
+          could work alongside cybersecurity professionals to combat
+          increasingly sophisticated threats. I realized that the skills of
+          problem-solving and pattern recognition that I admired in detective
+          stories were the same skills needed to outsmart cybercriminals. The
+          excitement of discovering a solution to a complex problem, especially
+          one that could have significant real-world consequences, fueled my
+          passion for both fields.
+        </p>
+      </div>
+    </article>
+
+    <article class="growth">
+      <div class="container">
+        <h2>From Curiosity to Passion</h2>
+        <p>
+          Over time, my interest grew into a deep desire to create AI-powered
+          cybersecurity tools. The idea of developing systems that could not
+          only detect intrusions but also predict future attacks before they
+          occurred is fascinating to me. In a world where cyber threats evolve
+          at a rapid pace, AI offers the potential to stay one step ahead of
+          cybercriminals. By analyzing enormous datasets in real time, AI can
+          identify patterns that humans might miss, much like how a detective
+          uncovers hidden clues in a case. I am particularly interested in the
+          ways AI can be used to automate threat detection and response,
+          ensuring that potential breaches are mitigated quickly and
+          efficiently. It’s this combination of detective-like problem-solving
+          and cutting-edge technology that drives my desire to contribute to the
+          field of cybersecurity.
+        </p>
+      </div>
+    </article>
+
+    <article class="future">
+      <div class="container">
+        <h2>The Future of Cybersecurity</h2>
+        <p>
+          Looking ahead, I see AI and cybersecurity as essential components in
+          the ongoing battle against cybercrime. As hackers grow more
+          sophisticated, the need for smarter, more proactive defense mechanisms
+          is greater than ever. My goal is to develop innovative AI solutions
+          that empower cybersecurity teams to protect individuals and
+          organizations from the ever-growing range of cyber threats. In many
+          ways, AI in cybersecurity feels like solving a mystery on a grand
+          scale—detecting hidden vulnerabilities, anticipating future threats,
+          and ensuring a safe digital world. Just as every detective story has a
+          solution, the future of cybersecurity, powered by AI, offers a path to
+          uncovering and solving the mysteries of the digital age.
+        </p>
+      </div>
+    </article>
+
+    <footer>
+      <div class="container">
+        <h3>Contact me</h3>
+        <p>
+          Email:<a href="mailto:welelabekele5gmail.com"
+            >welelabekele5gmail.com</a
+          >
+        </p>
+
+        <p>&copy; 2024 @Welela. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
