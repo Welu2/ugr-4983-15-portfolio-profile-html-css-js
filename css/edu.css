@@ -1,0 +1,382 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    display: flex;
+    flex-direction: column; /* Flexbox layout */
+  }
+  
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(17, 17, 17, 0.9); /* Same background color as header and footer */
+    color: rgba(255, 255, 255, 0.8); /* Text color with reduced opacity */
+    line-height: 1.6;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(17, 17, 17, 0.9); /* Darker nav background with higher opacity */
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8); /* White text with reduced opacity */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+    color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Active nav item background */
+    color: rgba(255, 255, 255, 1); /* Full opacity text for active link */
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    background-color: rgba(17, 17, 17, 0.8); /* Slightly lighter background for sidebar */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li, .sidebara {
+    width: 100%;
+}
+
+.table-introduction { text-align: left; /* Ensure the introduction text is aligned to the left */ 
+  margin: 0 50px; /* Adjusted to use px units */
+font-size: 16px;
+line-height: -10;
+}
+
+
+
+.Education {
+ 
+    width: 90%;
+    padding: 40px 20px;
+    margin: 0 auto;
+    text-align: left;
+    
+   
+}
+    
+.tableContainer {
+    overflow-x: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.table {
+    
+    width: 65%;
+    
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 7%; /* Center the table */ margin-right: auto;
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #333;
+    color: white;
+  }
+ 
+ 
+
+.skill {
+    max-width: 1000px;
+    padding: 20px;
+    text-align: left;
+    /*margin: 0 auto;*/
+    margin: 20px 5%  2% 17%;
+}
+
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 90px;
+}
+
+.skill li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 45%;
+    margin-bottom: 30px;
+}
+
+.skill h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+h2 {
+  font-size: 28px;
+  color: white;
+  margin-left: 8%;
+  font-weight: bold;
+  
+}
+
+
+.bar {
+    width: 100%;
+    height: 35px;
+    background: rgba(17, 17, 17, 0.5);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: white;
+    width: 0%;
+    animation: progressBar 2s ease-in-out forwards;
+}
+
+@keyframes progressBar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--progress);
+    }
+}
+
+.html { --progress: 90%; }
+.css { --progress: 80%; }
+.javascript { --progress: 75%; }
+.python { --progress: 70%; }
+.java { --progress: 85%; }
+
+.text {
+    color: white;
+}
+
+
+
+
+  /* General styles */
+.slider-container {
+  min-height: 70vh; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px; /* Padding for space between frame */
+  flex-direction: column;
+  position: relative;
+  width: 90%; /* Adjusted width */
+  max-width: 1400px; /* Increased max width */
+  margin: 40px auto; /* Margin for space between frame */
+  overflow: hidden;
+}
+
+/* Adjustments for mobile view */
+@media (max-width: 767px) {
+  .slider-container {
+      min-height: 100vh; /* Decrease height for mobile view */
+      padding: 20px; /* Reduce padding for mobile view */
+      margin: 20px auto; /* Reduce margin for mobile view */
+  }
+  .table{
+    width: 100%;
+    margin: 10px 0;
+   
+  }
+}
+
+.certificate-container {
+  margin: 30px auto 10px; /* Add space between the certificate and slider-container */
+  padding: 20px; /* Add padding inside the certificate container */
+  border: 1px solid #ddd; /* Optional: Add a border to the certificate container */
+  border-radius: 10px; /* Optional: Add rounded corners to the certificate container */
+  background-color: #f9f9f9; /* Optional: Add a background color to the certificate container */
+
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  padding: 0 60px; /* Add padding to accommodate buttons */
+}
+
+.scroll-box {
+  background-color: rgba(17, 17, 17, 0.1);
+  padding: 20px;
+  border: 1px solid rgba(17, 17, 17, 0.6);
+  border-radius: 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+/* For desktop: 3 columns */
+@media (min-width: 1024px) {
+  .scroll-box {
+      flex: 0 0 calc(33.333% - 40px); /* 3 columns */
+  }
+  .table{
+    width: 90%;
+    margin: 20px 5%;
+  }
+ 
+}
+
+/* For tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scroll-box {
+      flex: 0 0 calc(50% - 40px); /* 2 columns */
+  }
+  .table{
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* For mobile: 1 column */
+@media (max-width: 767px) {
+  .scroll-box {
+      flex: 0 0 calc(100% - 40px); /* 1 column */
+  }
+  .table-introduction {
+    font-size: 12px;
+    width: 90%;
+    margin: 0;
+  }
+}
+
+.scroll-box img {
+  width: 100%; /* Ensure images cover the full width of the scroll box */
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  max-height: 300px; /* Set a maximum height for the images */
+  object-fit: contain; /* Maintain aspect ratio and contain within the area */
+  border-radius: 10px;
+  align-self: center;
+}
+
+.scroll-box .description {
+  margin-top: 10px;
+  color: #000; /* Adjust text color for visibility */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 5px; /* Add border radius for a neat look */
+}
+
+.scroll-box .description a {
+  text-decoration: none;
+  color: #1f7a99;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 1;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    background-color: rgba(17, 17, 17, 0.8); /* Dark gray background for the footer */
+    color: #f8f9fa; /* Light text for footer */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  
+  /* Mobile hide certain elements */
+@media (max-width: 800px) {
+  .hideOnMoblie {
+      display: none;
+  }
+}
+@media (max-width: 480px) {
+.bar{
+  width: 180px;
+}
+
+}
