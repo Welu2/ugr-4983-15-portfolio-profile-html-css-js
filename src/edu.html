@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Education</title>
 
-    <link rel="stylesheet" href="edu.css" />
+    <link rel="stylesheet" href="css/edu.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav>
@@ -13,7 +17,7 @@
         <li onclick="hideSidebar()">
           <a href="#"><img src="images/close.svg" alt="close" /></a>
         </li>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="Aboutme.html">About me</a></li>
         <li><a href="edu.html">Education</a></li>
         <li><a href="hobby.html">Hobby</a></li>
@@ -23,7 +27,7 @@
         <li onclick="showSidebar()">
           <a href="#"><img src="images/menu.svg" alt="menu" /></a>
         </li>
-        <li class="hideOnMoblie"><a href="home.html">Home</a></li>
+        <li class="hideOnMoblie"><a href="index.html">Home</a></li>
         <li class="hideOnMoblie"><a href="Aboutme.html">About me</a></li>
         <li class="hideOnMoblie"><a href="edu.html">Education</a></li>
         <li class="hideOnMoblie"><a href="hobby.html">Hobby</a></li>
@@ -72,9 +76,8 @@
         </table>
       </div>
     </div>
-
+    <h2>My Skills</h2>
     <div class="skill">
-      <h2>My Skills</h2>
       <ul>
         <li>
           <h4>HTML</h4>
@@ -104,48 +107,51 @@
     </div>
     <h2>My Certificate</h2>
     <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img src="images/ibm.png" alt="Certificate 1" />
+      <button class="prev">&#10094;</button>
+      <div class="horizontal-scroll-container">
+        <div class="scroll-box">
+          <img src="images/ibm.png" alt="Image 1" />
           <div class="description">
             <a href="files/Cybersecurity_Fundamentals.pdf">IBM Cybersecurity</a>
           </div>
         </div>
-        <div class="slide">
-          <img src="images/udacity.jpg" alt="Certificate 2" />
+        <div class="scroll-box">
+          <img src="images/udacity.jpg" alt="Image 2" />
           <div class="description">
-            <a href="files/android.pdf">Udacity android</a>
+            <a href="files/android.pdf">Udacity Android</a>
           </div>
         </div>
-        <div class="slide">
-          <img src="images/cisco.png" alt="Certificate 3" />
+        <div class="scroll-box">
+          <img src="images/cisco.png" alt="Image 3" />
           <div class="description">
             <a href="files/LinuxUnhatched.pdf">Linux</a>
           </div>
         </div>
-        <div class="slide">
-          <img src="images/ibm.png" alt="Certificate 4" />
-          <div class="description"><a href="files/AI.pdf">IBM AI</a></div>
+        <div class="scroll-box">
+          <img src="images/ibm.png" alt="Image 4" />
+          <div class="description">
+            <a href="files/AI.pdf">IBM AI</a>
+          </div>
         </div>
-        <div class="slide">
-          <img src="images/cisco.png" alt="Certificate 5" />
+        <div class="scroll-box">
+          <img src="images/cisco.png" alt="Image 5" />
           <div class="description">
             <a href="files/Junior_Cybersecurity_Analyst_Career_Path.pdf"
-              >Junior_Cybersecurity_Analyst_Career_Path</a
+              >Junior Cybersecurity Analyst Career Path</a
             >
           </div>
         </div>
-        <div class="slide">
-          <img src="images/udacity.jpg" alt="Certificate 6" />
+        <div class="scroll-box">
+          <img src="images/udacity.jpg" alt="Image 6" />
           <div class="description">
-            <a href="files/programingFundamental.pdf">programing fundamental</a>
+            <a href="files/programingFundamental.pdf"
+              >Programming Fundamental</a
+            >
           </div>
         </div>
       </div>
-      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      <button class="next">&#10095;</button>
     </div>
-
     <script src="jedu.js"></script>
 
     <footer>
