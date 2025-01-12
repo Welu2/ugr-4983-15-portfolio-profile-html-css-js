@@ -1,0 +1,201 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(17, 17, 17, 0.9); /* Dark background */
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: rgba(17, 17, 17, 0.9); /* Dark nav background */
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8); /* White text with reduced opacity */
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+  color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+nav a.active {
+  background-color: rgba(255, 255, 255, 0.3); /* Active link background */
+  color: rgba(255, 255, 255, 1); /* Full opacity text for active link */
+}
+
+nav li:first-child {
+  margin-right: auto; /* Align first child to the left */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  background-color: rgba(17, 17, 17, 0.8); /* Slightly lighter background */
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar li, .sidebar a {
+  width: 100%;
+}
+
+
+/* Hobby Section Styling */
+.hobby-section {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 10px; 
+  text-align: justify;
+}
+
+h2 {
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.8); /* Slightly reduced opacity for titles */
+  margin: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.intro-text {
+  font-size: 1.3rem;
+  text-indent: 20px;
+  line-height: 1.8;
+  margin: auto 3%;
+  margin-right: 10px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Two columns */
+  gap: 20px;
+}
+
+.bullet-container {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+}
+
+.bullet-point {
+  margin-bottom: 10px;
+}
+
+.bullet-container:first-child {
+  grid-row: span 3;
+}
+
+.bullet-container:last-child {
+  grid-row: span 2;
+}
+
+/* Description styles for hobbies */
+.hobby-detail, .music-interest, .walking-interest {
+  font-size: 20px;
+  text-indent: 20px;
+  line-height: 1.8;
+  margin: auto 3%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.video-container iframe,
+video{
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: 20px auto; /* Center and add gap */
+}
+
+audio {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 50px;
+  margin: 20px auto;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgba(17, 17, 17, 0.8); /* Dark gray background for the footer */
+  color: #f8f9fa; /* Light text for footer */
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+
+
+/* Mobile hide certain elements */
+@media (max-width: 800px) {
+  .hideOnMoblie{
+      display: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .bullet-point {
+      font-size: 0.9rem;
+  }
+  h2{
+    font-size: 22px;
+    line-height: -10;
+  }
+
+  .intro-text,
+  .hobby-detail,
+  .music-interest,
+  .walking-interest {
+      font-size: 15px;
+      line-height: -10;
+  }
+  audio{
+    max-width: 260px;
+    height: 50px;
+    margin: 20px auto;
+  }
+}
+
+

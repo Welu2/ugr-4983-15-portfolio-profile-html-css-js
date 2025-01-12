@@ -1,0 +1,146 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(17, 17, 17, 0.9); /* Same background color as header and footer */
+    color: rgba(255, 255, 255, 0.8); /* Text color with reduced opacity */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full viewport height */
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: rgba(17, 17, 17, 0.9); /* Darker nav background with higher opacity */
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8); /* White text with reduced opacity */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+    color: rgba(255, 255, 255, 1); /* Full opacity on hover */
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3); /* Active nav item background */
+    color: rgba(255, 255, 255, 1); /* Full opacity text for active link */
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+    background-color: rgba(17, 17, 17, 0.8); /* Slightly lighter background for sidebar */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li, .sidebara {
+    width: 100%;
+}
+
+
+
+/* Container for Layout Consistency */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding to ensure space from the edges */
+    flex: 1; /* Allows the container to grow and push the footer to the bottom */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.8); /* Slightly reduced opacity for section titles */
+    margin-bottom: 40px; /* Increased margin for space between title and paragraph */
+}
+
+section p {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7); /* Slightly reduced opacity for text */
+    line-height: 1.8;
+    text-align: justify; /* Justified text alignment */
+    text-indent: 20px;
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(17, 17, 17, 0.9); /* Same background color as body and header */
+    color: rgba(255, 255, 255, 0.8); /* Text color with reduced opacity */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    
+    section h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    section p {
+        font-size: 15px;
+        line-height: -10px;
+    }
+}
+
+@media(max-width: 800px) {
+    .hideOnMoblie {
+        display: none;
+    }
+}
